@@ -81,7 +81,7 @@ public class PraiseFragment extends BasicTitleBarFragment
   }
 
   public void initdata() {
-    manageRpcCall(mInfo.getInfoList("1","1", "100"),
+    manageRpcCall(mInfo.getInfoList("0","1", "100"),
         new UiRpcSubscriber<List<InfoModel>>(getActivity()) {
           @Override protected void onSuccess(List<InfoModel> infoModels) {
             adapter.setDatas(infoModels);

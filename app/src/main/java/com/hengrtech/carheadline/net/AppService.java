@@ -35,6 +35,6 @@ public interface AppService {
   @Multipart
   @POST("upload.do")
   Observable<Response<ResponseModel<String>>> upload(@Part MultipartBody.Part file);
-  @GET("newslist/{pageNum}/{pageSize}")
-  Observable<Response<ResponseModel<List<InfoModel>>>> getInfoList(@Path("pageNum") String pageNum,@Path("newslist") String newslist,@Path("pageSize") String pageSize);
+  @GET("newslist/{newslist}/{pageNum}/{pageSize}")
+  Observable<Response<ResponseModel<List<InfoModel>>>> getInfoList(@Path("newslist") String newslist,@Path("pageNum") String pageNum,@Path("pageSize") String pageSize);
 }
