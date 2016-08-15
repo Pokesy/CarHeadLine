@@ -5,7 +5,7 @@
     android:orientation="vertical"
     >
 
-  <com.hengrtec.taobei.ui.basic.titlebar.TitleBar
+  <com.hengrtech.carheadline.ui.basic.titlebar.TitleBar
       android:id="@+id/title_bar_layout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

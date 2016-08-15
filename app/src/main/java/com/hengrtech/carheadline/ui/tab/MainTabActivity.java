@@ -12,7 +12,11 @@
 package com.hengrtech.carheadline.ui.tab;
 
 import com.hengrtech.carheadline.R;
+import com.hengrtech.carheadline.ui.area.AreaFragment;
 import com.hengrtech.carheadline.ui.basic.tab.BaseTabActivity;
+import com.hengrtech.carheadline.ui.discover.DiscoverFragment;
+import com.hengrtech.carheadline.ui.home.HomeFragment;
+import com.hengrtech.carheadline.ui.profile.ProfileFragment;
 
 /**
  * [一句话功述]<BR>
@@ -23,18 +27,24 @@ import com.hengrtech.carheadline.ui.basic.tab.BaseTabActivity;
  */
 public class MainTabActivity extends BaseTabActivity {
 
-  @Override
-  protected int getLayoutId() {
+  @Override protected int getLayoutId() {
     return R.layout.main_tab;
   }
 
-  @Override
-  protected Class[] getContentClazzes() {
-    return new Class[0];
+  @Override protected Class[] getContentClazzes() {
+    return new Class[] {
+        HomeFragment.class, DiscoverFragment.class, AreaFragment.class, ProfileFragment.class
+    };
   }
 
-  @Override
-  protected String[] getTabTitles() {
-    return null;
+  @Override protected String[] getTabTitles() {
+    return new String[] { "头条", "发现", "社区", "我的" };
   }
+
+  @Override protected int[] getTabIcons() {
+    return new int[] {
+        R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher, R.mipmap.ic_launcher
+    };
+  }
+
 }

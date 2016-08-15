@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <string-array name="home_tab_title">
+    <item>资讯</item>
+    <item>口碑</item>
+    <item>作业</item>
+    <item>自媒体</item>
+  </string-array>
 </resources>

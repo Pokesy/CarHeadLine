@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">Taobei</string>
+  <string name="app_name">CarHeadLine</string>
+  <string name="time_format_minute">%d分钟前</string>
+  <string name="time_format_hour">%d小时前</string>
+  <string name="time_format_just">刚刚</string>
+  <!--首页-->
+  <string name="news">资讯</string>
+  <string name="praise">口碑</string>
+  <string name="work">作业</string>
+  <string name="today">今日精选</string>
+  <string name="subject">专题</string>
+  <string name="hydrology">甩干水文</string>
+  <string name="media">自媒体</string>
+  <string name="head">头条</string>
+  <string name="discover">发现</string>
+  <string name="community">社区</string>
+  <string name="profile">我的</string>
+  <string name="today_enter">进入专题  ></string>
+
+  <!-- 个人详情 -->
+  <string name="activity_profile_detail_title">个人详情</string>
+  <string name="activity_profile_detail_label_avatar">头像</string>
+  <string name="activity_profile_detail_label_tag">标签</string>
+  <string name="activity_profile_detail_label_certify">成为认证会员</string>
+  <string name="activity_profile_detail_label_phone">手机号码</string>
+  <string name="activity_profile_detail_label_nick_name">昵称</string>
+  <string name="activity_profile_detail_label_introduction">自我介绍</string>
+  <string name="activity_profile_detail_label_gender">性别</string>
+  <string name="activity_profile_detail_label_age">年龄</string>
+  <string name="activity_profile_detail_label_city">所在城市</string>
+  <string name="activity_profile_detail_label_birthplace">出生地</string>
+  <string name="activity_profile_detail_label_profession">职业</string>
+  <string name="activity_profile_detail_label_education">学历</string>
+  <string name="activity_profile_detail_label_account_bind">账号绑定</string>
+  <string name="activity_profile_detail_value_not_certify">去认证</string>
+  <string name="activity_profile_detail_value_not_set">未设置</string>
+  <string name="activity_profile_detail_value_not_bind">去绑定</string>
+  <string name="activity_profile_detail_add_tag">+\u0020贴标签</string>
 </resources>

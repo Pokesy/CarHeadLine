@@ -84,7 +84,7 @@
       style="@style/Widget.App.TextView.Large.White"
       />
 
-  <com.sevenheaven.segmentcontrol.SegmentControl
+  <com.hengrtech.carheadline.segmentcontrol.SegmentControl
       android:id="@+id/tabs"
       android:layout_width="100dp"
       android:layout_height="wrap_content"

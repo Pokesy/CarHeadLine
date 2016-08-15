@@ -60,4 +60,8 @@
   <dimen name="module_item_text_border_height">80px</dimen>
 
 
+  <!--图片大小-->
+  <dimen name="grid_img_height_single">160dp</dimen>
+  <dimen name="grid_img_height_two">124.8dp</dimen>
+  <dimen name="grid_img_height_three">89.6dp</dimen>
 </resources>

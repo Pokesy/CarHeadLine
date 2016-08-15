@@ -1,6 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176.5dp"
+        android:background="@mipmap/ic_launcher"
+        >
+      <LinearLayout
+          android:id="@+id/un_login_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="50dp"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            />
+
+      </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.8"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        >
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tool:text="@string/app_name"
+            style="@style/Widget.App.TextView.Medium"
+            />
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="1dp"
+          android:layout_height="32dp"
+          android:background="@color/tab_layout_color"
+          />
+
+      <LinearLayout
+          android:id="@+id/btn_red_bag"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tool:text="@string/app_name"
+            style="@style/Widget.App.TextView.Medium"
+            />
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="1dp"
+          android:layout_height="32dp"
+          android:background="@color/tab_layout_color"
+          />
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center_horizontal"
+          android:orientation="vertical"
+          >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tool:text="@string/app_name"
+            style="@style/Widget.App.TextView.Medium"
+            />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/message"
+        style="@style/ProfileMenuContainer"
+        >
+      <TextView
+
+          android:drawableLeft="@mipmap/ic_launcher"
+          android:text="@string/app_name"
+          style="@style/Widget.App.TextView.Large.Primary.ProfileMenu"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/ic_launcher"
+          />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/frend"
+        style="@style/ProfileMenuContainer"
+        >
+      <TextView
+
+          android:drawableLeft="@mipmap/ic_launcher"
+          android:text="@string/app_name"
+          style="@style/Widget.App.TextView.Large.Primary.ProfileMenu"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/ic_launcher"
+          />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/watched"
+        style="@style/ProfileMenuContainer"
+        >
+      <TextView
+
+          android:drawableLeft="@mipmap/ic_launcher"
+          android:text="@string/app_name"
+          style="@style/Widget.App.TextView.Large.Primary.ProfileMenu"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/ic_launcher"
+          />
+    </RelativeLayout>
+  </LinearLayout>
+</ScrollView>

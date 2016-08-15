@@ -30,4 +30,5 @@ public interface ActivityComponent extends GlobalComponent {
   Bus getActivityBus();
 
   void inject(HomeActivity activity);
+
 }

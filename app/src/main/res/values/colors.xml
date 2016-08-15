@@ -30,4 +30,10 @@
   <color name="font_color_dark_gray">#666666</color>
 
   <color name="font_color_red_tab_bar">#eb4f38</color>
+  <!--分隔-->
+  <color name="bg_color_divider">#c8c8c8</color>
+  <!-- title -->
+  <color name="tab_layout_indicator_color">#202d59</color>
+  <!-- TabIndicator -->
+  <color name="tab_layout_color">#96a0aa</color>
 </resources>
