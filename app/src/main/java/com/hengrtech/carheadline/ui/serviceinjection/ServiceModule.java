@@ -13,8 +13,11 @@ package com.hengrtech.carheadline.ui.serviceinjection;
 
 import com.hengrtech.carheadline.injection.GlobalModule;
 import com.hengrtech.carheadline.net.AppService;
+import com.hengrtech.carheadline.net.AuthService;
 import com.hengrtech.carheadline.net.RetrofitFactory;
 import com.hengrtech.carheadline.net.RpcCallManager;
+import com.hengrtech.carheadline.net.UserService;
+import com.hengrtech.carheadline.utils.preference.CustomAppPreferences;
 import dagger.Module;
 import dagger.Provides;
 
@@ -35,6 +38,16 @@ public class ServiceModule {
   @Provides
   public RpcCallManager providerRpcCallManager() {
     return new RpcCallManager.RpcCallManagerImpl();
+  }
+
+  @Provides
+  public UserService providesUserService() {
+    return RetrofitFactory.createUserService();
+  }
+
+  @Provides
+  public AuthService providesAuthService(CustomAppPreferences appPreferences) {
+    return RetrofitFactory.createAuthService(appPreferences);
   }
 }
 

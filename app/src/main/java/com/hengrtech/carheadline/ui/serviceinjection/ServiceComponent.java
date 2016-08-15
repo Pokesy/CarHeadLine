@@ -11,8 +11,10 @@
  */
 package com.hengrtech.carheadline.ui.serviceinjection;
 
+import com.hengrtech.carheadline.manager.LoginSession;
 import com.hengrtech.carheadline.net.AppService;
 import com.hengrtech.carheadline.net.RpcCallManager;
+import com.hengrtech.carheadline.net.UserService;
 import com.hengrtech.carheadline.ui.home.InformationFragment;
 import com.hengrtech.carheadline.ui.home.MediaFragment;
 import com.hengrtech.carheadline.ui.home.PraiseFragment;
@@ -31,10 +33,13 @@ import javax.inject.Singleton;
   RpcCallManager rpcCallManager();
 
   AppService appService();
+  UserService userService();
 
   void inject(InformationFragment fragment);
   void inject(PraiseFragment fragment);
   void inject(WorkFragment fragment);
   void inject(MediaFragment fragment);
   void inject(TodayActivity activity);
+
+  void inject(LoginSession loginSession);
 }

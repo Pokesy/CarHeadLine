@@ -13,6 +13,7 @@ package com.hengrtech.carheadline.net;
 
 import com.hengrtech.carheadline.log.Logger;
 import com.hengrtech.carheadline.net.constant.NetConstant;
+import com.hengrtech.carheadline.utils.preference.CustomAppPreferences;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import okhttp3.Interceptor;
@@ -42,6 +43,24 @@ public class RetrofitFactory {
                 .newThread())).
             build();
     return retrofit.create(AppService.class);
+  }
+
+  public static UserService createUserService() {
+    Retrofit retrofit = new Retrofit.Builder().baseUrl(NetConstant.BASE_URL)
+        .client(createNormalClient()).addConverterFactory(GsonConverterFactory.create()).
+            addCallAdapterFactory(RxJavaCallAdapterFactory.createWithScheduler(Schedulers
+                .newThread())).
+            build();
+    return retrofit.create(UserService.class);
+  }
+
+  public static AuthService createAuthService(CustomAppPreferences appPreferences) {
+    Retrofit retrofit = new Retrofit.Builder().baseUrl(NetConstant.BASE_URL)
+        .client(createNormalClient()).addConverterFactory(GsonConverterFactory.create()).
+            addCallAdapterFactory(RxJavaCallAdapterFactory.createWithScheduler(Schedulers
+                .newThread())).
+            build();
+    return retrofit.create(AuthService.class);
   }
 
   private static OkHttpClient createClient() {

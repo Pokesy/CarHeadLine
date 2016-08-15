@@ -2,6 +2,8 @@ package com.hengrtech.carheadline.injection;
 
 import android.content.Context;
 import com.hengrtech.carheadline.CustomApp;
+import com.hengrtech.carheadline.manager.LoginSession;
+import com.hengrtech.carheadline.utils.preference.CustomAppPreferences;
 import com.squareup.otto.Bus;
 import dagger.Module;
 import dagger.Provides;
@@ -32,4 +34,15 @@ public class GlobalModule {
     return new Bus();
   }
 
+  @Singleton
+  @Provides
+  public CustomAppPreferences providesGlobalPreferences() {
+    return new CustomAppPreferences(mApplication);
+  }
+
+  @Provides
+  @Singleton
+  public LoginSession providesLoginSession() {
+    return new LoginSession(mApplication);
+  }
 }

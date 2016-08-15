@@ -12,8 +12,10 @@
 package com.hengrtech.carheadline.injection;
 
 import android.content.Context;
+import com.hengrtech.carheadline.manager.LoginSession;
 import com.hengrtech.carheadline.net.HttpErrorUiNotifier;
 import com.hengrtech.carheadline.ui.tab.MainTabActivity;
+import com.hengrtech.carheadline.utils.preference.CustomAppPreferences;
 import com.squareup.otto.Bus;
 import dagger.Component;
 import javax.inject.Singleton;
@@ -34,6 +36,10 @@ public interface GlobalComponent {
   Bus getGlobalBus();
 
   HttpErrorUiNotifier httpErrorUiNotifier();
+
+  CustomAppPreferences appPreferences();
+
+  LoginSession loginSession();
 
   public void inject(MainTabActivity activity);
 }
